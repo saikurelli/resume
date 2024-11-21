@@ -77,12 +77,12 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubLineheading}[5]{
+\newcommand{\resumeSubLineheading}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
+      \textit{\small#4} & \textit{\small #6} \\
       \textit{\small#3} & \textit{\small #5} \\
-      \textit{\small#4}
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -122,79 +122,80 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\huge \scshape Sairaja Kurelli} \\ \vspace{3pt}
-    \small \faGithub{} saikurelli $\;\;$ \faEnvelope{} saikurelli@utexas.edu $\;\;$ \faPhone{} 713-624-2159 $\;\;$\faLinkedin{} sai-kurelli
+  \textbf{\huge \scshape Sairaja Kurelli} \\ \vspace{3pt}
+  \small \faGithub{} saikurelli $\;\;$ \faEnvelope{} saikurelli@utexas.edu $\;\;$ \faPhone{} 713-624-2159 $\;\;$\faLinkedin{} sai-kurelli
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubLineheading
-      {University of Texas at Austin}{Austin, TX}
-      {Master of Science in \textbf{Computer Science}}
-      {Bachelor of Science in \textbf{Computer Science}, Minor in \textbf{Business} - 3.8 GPA}{Graduating May 2025}
-      \\
-      \resumeItemListStart
-        \resumeItem{\small \textbf{Relevant Coursework:} Data Structures, Algorithms, Machine Learning,
-        Computer Architecture, Operating Systems, Graphics, Symbolic Programming, Programming for Correctness \& Performance,
-        iOS Development, Ethical Hacking}
-        \resumeItem{\small \textbf{Graduate Courses:} Securing Real World Systems, Communication Complexity, Program Synthesis, Programming Languages, Human-Computer Interactions, Ethics of AI, Cybersecurity Technology Law and Policy}
-      \resumeItemListEnd
-    %   \resumeItemListStart
-    %     % \resumeItem{\small \textbf{Relevant Coursework:} AP Computer Science A, AP Macroeconomics, AP Physics C: Mechanics, AP Physics C: Electricity and Magnetism, AP Statistics, Computer Science III, Multivariable Calculus, Organic Chemistry}
-    %     % \resumeItem{\small \textbf{Extracurricular Activities:} }
-    %   \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubLineheading
+{University of Texas at Austin}{Austin, TX}
+{Master of Science in \textbf{Computer Science}}
+{Bachelor of Science in \textbf{Computer Science}, Minor in \textbf{Business} - 3.8 GPA}{Graduating May 2025} {May 2024}
+\\
+\resumeItemListStart
+\resumeItem{\small \textbf{Relevant Coursework:} Data Structures, Algorithms, Machine Learning,
+  Computer Architecture, Operating Systems, Graphics, Symbolic Programming, Programming for Correctness \& Performance,
+  iOS Development, Ethical Hacking}
+\resumeItem{\small \textbf{Graduate Courses:} Securing Real World Systems, Communication Complexity, Program Synthesis, Programming Languages, Human-Computer Interactions, Ethics of AI, Cybersecurity Technology Law and Policy}
+\resumeItemListEnd
+%   \resumeItemListStart
+%     % \resumeItem{\small \textbf{Relevant Coursework:} AP Computer Science A, AP Macroeconomics, AP Physics C: Mechanics, AP Physics C: Electricity and Magnetism, AP Statistics, Computer Science III, Multivariable Calculus, Organic Chemistry}
+%     % \resumeItem{\small \textbf{Extracurricular Activities:} }
+%   \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-    \normalsize{\item{
-    \textbf{Languages}{: Proficient with Java, Scala, SQL, Python, C/C++, and React-Native with TypeScript} \\
-    \textbf{Developer Tools}{: Docker, Kafka, AWS, UNIX, Git, Octave, LaTeX, VS Code, IntelliJ, GitHub \& GitLab} \\
-    }}
+  \normalsize{\item{
+        \textbf{Languages}{: Proficient with Python, Java, Scala, SQL, C/C++, SwiftUI, and React-Native with TypeScript} \\
+        \textbf{Developer Tools}{: Docker, AWS, Kafka, UNIX, Git, Octave, LaTeX, VS Code, IntelliJ, GitHub \& GitLab} \\
+        }}
 \end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Software Engineer Intern}{May 2022 -- Aug. 2022, May 2023 -- Aug. 2023, May 2024 -- Aug. 2024}
-      {Visa}{}
-      \resumeItemListStart
-        \resumeItem{Designed a system to provide real-time analytics on usage of Hadoop Resources, built to optimize performance of a distributed queue with more than \textbf{4k Virtual Cores} using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{PowerBI}}
-        \resumeItem{Built a \textbf{Spark} pipeline on \textbf{HDFS} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
-        % Add number to this one? How many spark jobs do we do hourly?
-        % Built on idea of optimizing SQL scripts (inner join before), now learning to take advantage of Spark SQL instead of more generic solutions like Pattern Matching (Map Reduce with Column Conditions)
-      % x\resumeItemListEnd
-      % % 2022, Sophomore - Junior Year summer
-      % \resumeItemListStart
-        \resumeItem{Configured direct \textbf{JDBC} connections to \textbf{Spark-Thrift} data servers in \textbf{Scala} for faster in-house data processing}
-        \resumeItem{Optimized \textbf{16} core \textbf{SQL} scripts that aggregated Visa's distributed datalake to reporting tools like Tableau}
-      \resumeItemListEnd
-     \resumeSubheading
-      {Software Engineer Intern}{Jun. 2021 -- Aug. 2021}
-      {Tata Consultancy Services}{}
-      \resumeItemListStart
-        \resumeItem{Executed data conversion for customers' AP, AR, and GL Transactions using FBDI CSV files}
-        \resumeItem{Role provisioned for on-boarding users and Inactivated Oracle User Accounts for off-boarding}
-        \resumeItem{Used Oracle \textbf{REST APIs} to update AP and AR invoices and Developed OTBI and BIP Reports using \textbf{SQL} queries}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Student Researcher}{Jun. 2019 -- Aug. 2019}
-      {Rice University}{}
-      \resumeItemListStart
-        \resumeItem{Researched Efficient Bucket and Permutation Sizes for Minhashing with Professor Anshumali Shrivastava}
-        \resumeItem{Optimized implementation of Murmurhash in \textbf{Python} for Minhashing Algorithm for a \textbf{3-4\%} improvement}
-      \resumeItemListEnd
-    % \resumeSubheading
-    %   {Software Engineer Intern}{May. 2019 -- Jul. 2019}
-    %   {PetroEd}{}
-    %   \resumeItemListStart
-    %     \resumeItem{Implemented Naive-Bayes Classifier in \textbf{Java} as Similarity Checker between Lesson Objectives and Modules}
-    %     \resumeItem{Developed e-learning software based on \textbf{SkillGRID LMS} and \textbf{SkillGRID CMS} format to license to oil/gas companies}
-      % \resumeItemListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Engineer Intern}{May 2022 -- Aug. 2022, May 2023 -- Aug. 2023, May 2024 -- Aug. 2024}
+{Visa}{}
+\resumeItemListStart
+\resumeItem{Designed a system with real-time analytics for Hadoop Resources, built to optimize performance of a distributed queue of more than \textbf{4k Virtual Cores} using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{PowerBI}}
+\resumeItem{Built a \textbf{Spark Scala} pipeline for \textbf{Hadoop File System} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
+% \resumeItem{Built a \textbf{Spark} pipeline in \textbf{Scala} on \textbf{HDFS} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
+\resumeItem{Designed systems with \textbf{JUnit} Unit Testing and integration into \textbf{Splunk} to monitor logs in an \textbf{Agile} environment}
+% Add number to this one? How many spark jobs do we do hourly?
+% Built on idea of optimizing SQL scripts (inner join before), now learning to take advantage of Spark SQL instead of more generic solutions like Pattern Matching (Map Reduce with Column Conditions)
+% x\resumeItemListEnd
+% % 2022, Sophomore - Junior Year summer
+% \resumeItemListStart
+\resumeItem{Optimized \textbf{16} core \textbf{SQL} scripts with \textbf{JDBC} connections to \textbf{Spark-Thrift} servers for faster in-house data processing}
+\resumeItemListEnd
+\resumeSubheading
+{Software Engineer Intern}{Jun. 2021 -- Aug. 2021}
+{Tata Consultancy Services}{}
+\resumeItemListStart
+\resumeItem{Executed data conversion for customers' AP, AR, and GL Transactions using FBDI CSV files}
+% \resumeItem{Role provisioned for on-boarding users and Inactivated Oracle User Accounts for off-boarding}
+\resumeItem{Used Oracle \textbf{REST APIs} to update AP and AR invoices and Developed OTBI and BIP Reports using \textbf{SQL} queries}
+\resumeItemListEnd
+\resumeSubheading
+{Student Researcher}{Jun. 2019 -- Aug. 2019}
+{Rice University}{}
+\resumeItemListStart
+\resumeItem{Researched Efficient Bucket and Permutation Sizes for Minhashing with Professor Anshumali Shrivastava}
+\resumeItem{Optimized implementation of Murmurhash in \textbf{Python} for Minhashing Algorithm for a \textbf{3-4\%} improvement}
+\resumeItemListEnd
+% \resumeSubheading
+%   {Software Engineer Intern}{May. 2019 -- Jul. 2019}
+%   {PetroEd}{}
+%   \resumeItemListStart
+%     \resumeItem{Implemented Naive-Bayes Classifier in \textbf{Java} as Similarity Checker between Lesson Objectives and Modules}
+%     \resumeItem{Developed e-learning software based on \textbf{SkillGRID LMS} and \textbf{SkillGRID CMS} format to license to oil/gas companies}
+% \resumeItemListEnd
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -204,65 +205,65 @@
 %     \resumeItemListEnd
 %    \resumeSubHeadingListEnd
 %-------------------------------------------
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 
 
 
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeProjectHeading
-        {\textbf{First Place at HackMerced-VII} with team project \textbf{\emph{Lablr}} for Instagram}{}
-        \resumeItemListStart
-          \resumeItem{Designed a \textbf{Chrome} Extension with \textbf{Vue.JS} to help users assign tags on Image Distortions and develop a healthier body mindset.}
-          % ML?, young
-        \resumeItemListEnd
-    \resumeProjectHeading
-        {{Software Lead for team \textbf{\emph{RegoSafe}} at TSGC’s Design Challenge}}{}
-        \resumeItemListStart
-          \resumeItem{Trained Detectron2 on
-            lunar machinery state using
-          \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set}
-        \resumeItemListEnd
-    \resumeProjectHeading{
-      Backend Lead for project \textbf{\emph{Farm Fresh News}} at HackTX
-    }{}
-      \resumeItemListStart
-      \resumeItem{Developed application that aggregates farming news
-      with \textbf{Google Natural Language API} sentiment analysis}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{First Place at HackMerced-VII} with team project \textbf{\emph{Lablr}} for Instagram}{}
+\resumeItemListStart
+\resumeItem{Designed a \textbf{Chrome} Extension with \textbf{Vue.JS} and data in \textbf{AWS} to help users assign tags on Image Distortions and develop a healthier body mindset.}
+% ML?, young
+\resumeItemListEnd
+\resumeProjectHeading
+{{Software Lead for team \textbf{\emph{RegoSafe}} at TSGC’s Design Challenge}}{}
+\resumeItemListStart
+\resumeItem{Trained Detectron2 on
+  lunar machinery state using
+  \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set}
+\resumeItemListEnd
+\resumeProjectHeading{
+  Backend Lead for project \textbf{\emph{Farm Fresh News}} at HackTX
+}{}
+\resumeItemListStart
+\resumeItem{Developed application that aggregates farming news
+  with \textbf{Google Natural Language API} sentiment analysis}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %% Add projects here
 %-----------LEADERSHIP---------
 \section{Leadership}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {President (2023-2024), Vice President of Finances (2020-2023)}{Aug. 2020 -- May 2024}
-      {Association for Computing Machinery}{University of Texas}
-      \resumeItemListStart
-        \resumeItem{Designed and hosted community events to build an ACM community of more than 300 UT Students}
-        \resumeItem{Augmented Academic Lesson Plans for CS 101 and pioneered new events like a \textbf{Kafka} workshop}
-        \resumeItem{Coordinated and directed budget resources over \textbf{\$19,000} annually from 2020-2024}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Teaching Assistant}{Jan. 2022 -- present}
-      {Elements of Computers and Programming}{University of Texas}
-      \resumeItemListStart
-        \resumeItem{Designed quizzes for over 600 students and evaluated \textbf{Python} assignments for 60 student cohorts}
-        \resumeItem{Conducted office hours to help students work through questions over Data Structures and OOP concepts}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubheading
+{President (2023-2024), Vice President of Finances (2020-2023)}{Aug. 2020 -- May 2024}
+{Association for Computing Machinery}{University of Texas}
+\resumeItemListStart
+\resumeItem{Designed and hosted community events to build an ACM community of more than 300 UT Students}
+\resumeItem{Improved Academic Lesson Plans for CS 101s and pioneered new events like \textbf{AWS} and \textbf{Kafka} workshops}
+\resumeItem{Coordinated and directed budget resources over \textbf{\$19,000} annually from 2020-2024}
+\resumeItemListEnd
+\resumeSubheading
+{Lead Teaching Assistant}{Jan. 2022 -- present}
+{Elements of Computers and Programming}{University of Texas}
+\resumeItemListStart
+\resumeItem{Designed quizzes and \textbf{Docker} autograders for over \textbf{600} students and graded section's \textbf{Python} assignments}
+\resumeItem{Conducted office hours to help students work through questions over Data Structures and OOP concepts}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
 % Move activities to another section?
-    % \resumeSubheading
-    %   {}{}
-    %   {Economics Club}{Dulles High School}
-    %   \resumeItemListStart
-    %     \resumeItem{Organized 3-4 National Economic Challenge, Knowledge@Wharton, and Personal Finance Challenge groups}
-    %     \resumeItem{Taught Macroeconomics concepts such as Inflation and GDP}
-    %   \resumeItemListEnd
+% \resumeSubheading
+%   {}{}
+%   {Economics Club}{Dulles High School}
+%   \resumeItemListStart
+%     \resumeItem{Organized 3-4 National Economic Challenge, Knowledge@Wharton, and Personal Finance Challenge groups}
+%     \resumeItem{Taught Macroeconomics concepts such as Inflation and GDP}
+%   \resumeItemListEnd
 
 %-----------Awards/PROGRAMMING SKILLS-----------
 
