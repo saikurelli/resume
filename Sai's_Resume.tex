@@ -81,7 +81,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#4} & \textit{\small #6} \\
+      % \textit{\small#4} & \textit{\small #6} \\
       \textit{\small#3} & \textit{\small #5} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -132,14 +132,14 @@
 \resumeSubHeadingListStart
 \resumeSubLineheading
 {University of Texas at Austin}{Austin, TX}
-{Master of Science in \textbf{Computer Science}}
-{Bachelor of Science in \textbf{Computer Science}, Minor in \textbf{Business} - 3.8 GPA}{Graduating May 2025} {May 2024}
+{Master of Science and Bachelor of Science in \textbf{Computer Science}, Minor in \textbf{Business} - 3.8 GPA}
+{}{May 2025} {}
 \\
 \resumeItemListStart
-\resumeItem{\small \textbf{Relevant Coursework:} Data Structures, Algorithms, Machine Learning,
+\resumeItem{\small \textbf{Relevant Coursework:} Machine Learning, Data Structures, Algorithms,
   Computer Architecture, Operating Systems, Graphics, Symbolic Programming, Programming for Correctness \& Performance,
-  iOS Development, Ethical Hacking}
-\resumeItem{\small \textbf{Graduate Courses:} Securing Real World Systems, Communication Complexity, Program Synthesis, Programming Languages, Human-Computer Interactions, Ethics of AI, Cybersecurity Technology Law and Policy}
+  iOS Development, Ethical Hacking} %FEEDBACK: PUT MORE IMPORTANT COURSES FIRST THEN THE BASICS IF U HAVE SPACE (YOU DON'T)
+\resumeItem{\small \textbf{Graduate Courses:} Cybersecurity Technology, Theory/Practice Of Secure Systems, Grounded Natural Language Processing, Cybersecurity Technology Law and Policy, Securing Real World Systems, Ethics of AI, Communication Complexity, Program Synthesis, Programming Languages, Human-Computer Interactions}
 \resumeItemListEnd
 %   \resumeItemListStart
 %     % \resumeItem{\small \textbf{Relevant Coursework:} AP Computer Science A, AP Macroeconomics, AP Physics C: Mechanics, AP Physics C: Electricity and Magnetism, AP Statistics, Computer Science III, Multivariable Calculus, Organic Chemistry}
@@ -150,9 +150,9 @@
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
-  \normalsize{\item{
+  \small{\item{
         \textbf{Languages}{: Proficient with Python, Java, Scala, SQL, C/C++, SwiftUI, and React-Native with TypeScript} \\
-        \textbf{Developer Tools}{: Docker, AWS, Kafka, UNIX, Git, Octave, LaTeX, VS Code, IntelliJ, GitHub \& GitLab} \\
+        \textbf{Developer Tools}{: Docker, AWS, Kafka, Kubernetes, UNIX, Git, LaTeX, Visual Studio Code, GitHub \& GitLab} \\
         }}
 \end{itemize}
 
@@ -163,16 +163,17 @@
 {Software Engineer Intern}{May 2022 -- Aug. 2022, May 2023 -- Aug. 2023, May 2024 -- Aug. 2024}
 {Visa}{}
 \resumeItemListStart
-\resumeItem{Designed a system with real-time analytics for Hadoop Resources, built to optimize performance of a distributed queue of more than \textbf{4k Virtual Cores} using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{PowerBI}}
-\resumeItem{Built a \textbf{Spark Scala} pipeline for \textbf{Hadoop File System} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
+\resumeItem{(S24) Designed a real-analytics system for Hadoop Resources, built to optimize performance of a distributed queue of \textbf{$\geq$ 4k Virtual Cores} using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{PowerBI}, a key part of team's cloud migration initiative}
+\resumeItem{(S23) Built a \textbf{Spark Scala} pipeline on Visa's \textbf{Hadoop File System} to extract \textbf{YARN} results for data analytics jobs across orgs, stored results using data repartitioning techniques \& compression algos creating \textbf{10x} file size reduction}
 % \resumeItem{Built a \textbf{Spark} pipeline in \textbf{Scala} on \textbf{HDFS} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
-\resumeItem{Designed systems with \textbf{JUnit} Unit Testing and integration into \textbf{Splunk} to monitor logs in an \textbf{Agile} environment}
+
 % Add number to this one? How many spark jobs do we do hourly?
 % Built on idea of optimizing SQL scripts (inner join before), now learning to take advantage of Spark SQL instead of more generic solutions like Pattern Matching (Map Reduce with Column Conditions)
 % x\resumeItemListEnd
 % % 2022, Sophomore - Junior Year summer
 % \resumeItemListStart
-\resumeItem{Optimized \textbf{16} core \textbf{SQL} scripts with \textbf{JDBC} connections to \textbf{Spark-Thrift} servers for faster in-house data processing}
+\resumeItem{(S22) Optim. 16 core \textbf{SQL} scripts w/ \textbf{JDBC} connections to \textbf{Spark-Thrift} servers for faster in-house data processing}
+\resumeItem{Designed systems with \textbf{JUnit} Unit Testing and integrated into \textbf{Splunk} to monitor logs in an \textbf{Agile} environment}
 \resumeItemListEnd
 \resumeSubheading
 {Software Engineer Intern}{Jun. 2021 -- Aug. 2021}
@@ -186,9 +187,17 @@
 {Student Researcher}{Jun. 2019 -- Aug. 2019}
 {Rice University}{}
 \resumeItemListStart
-\resumeItem{Researched Efficient Bucket and Permutation Sizes for Minhashing with Professor Anshumali Shrivastava}
-\resumeItem{Optimized implementation of Murmurhash in \textbf{Python} for Minhashing Algorithm for a \textbf{3-4\%} improvement}
+\resumeItem{Collaborated with Prof. Shrivastava to research \& fine-tune efficient bucket and permutation sizes for Minhashing}
+% , improv. performance for large-scale similarity search tasks, explored hash function design trade-offs
+\resumeItem{Optimized Murmurhash implementation in \textbf{Python} for a \textbf{3-4\%} improvement on sentiment analysis tasks}
 \resumeItemListEnd
+
+%
+% Collaborated with Prof. Anshumali Shrivastava to research and fine-tune efficient bucket and permutation sizes for Minhashing algorithms, enhancing accuracy and performance for large-scale similarity search tasks.
+% Optimized the implementation of Murmurhash in Python, achieving a measurable 3–4% performance improvement in runtime efficiency.
+% Analyzed trade-offs in hash function design, contributing to a deeper understanding of how Minhashing can be applied in high-dimensional data scenarios.
+% Explored real-world applications of Minhashing in domains such as text similarity and large-scale deduplication.
+
 % \resumeSubheading
 %   {Software Engineer Intern}{May. 2019 -- Jul. 2019}
 %   {PetroEd}{}
@@ -210,28 +219,51 @@
 
 
 \section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{First Place at HackMerced-VII} with team project \textbf{\emph{Lablr}} for Instagram}{}
-\resumeItemListStart
-\resumeItem{Designed a \textbf{Chrome} Extension with \textbf{Vue.JS} and data in \textbf{AWS} to help users assign tags on Image Distortions and develop a healthier body mindset.}
-% ML?, young
-\resumeItemListEnd
-\resumeProjectHeading
-{{Software Lead for team \textbf{\emph{RegoSafe}} at TSGC’s Design Challenge}}{}
-\resumeItemListStart
-\resumeItem{Trained Detectron2 on
-  lunar machinery state using
-  \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set}
-\resumeItemListEnd
-\resumeProjectHeading{
-  Backend Lead for project \textbf{\emph{Farm Fresh News}} at HackTX
-}{}
-\resumeItemListStart
-\resumeItem{Developed application that aggregates farming news
-  with \textbf{Google Natural Language API} sentiment analysis}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
+\begin{itemize}[]
+  \small
+        {\item{
+        \textbf{HackMerced-VII Winner (Lablr)}{: Designed a \textbf{Vue.js} Chrome extension with \textbf{OpenCV} to detect spatial pixel irregularities and assign tags on image distortions, integrated with Instagram data stored on \textbf{AWS S3}
+        }}} \vspace{-7pt}
+
+        {\item{\textbf{TSGC's Design Challenge Team Software Lead (RegoSafe)}{: Trained computer vision model to detect and analyze lunar machinery status using
+          \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set
+        }}}  \vspace{-7pt}
+
+        {\item{\textbf{HackTX's Design Challenge Team Backend Lead (Farm Fresh News)}{: Developed a full-stack application aggregating farming news to determine crop outlook with \textbf{Google Natural Language API} sentiment analysis engine
+        }}}  \vspace{-7pt}
+
+        %
+
+\end{itemize}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+% {\textbf{First Place at HackMerced-VII} with team project \textbf{\emph{Lablr}} for Instagram}{}
+% \resumeItemListStart
+% \resumeItem{Designed a \textbf{Chrome} Extension with \textbf{Vue.JS} integrated with \textbf{AWS S3} storage to help users assign tags on Image Distortions and develop a healthier body mindset.}
+% % ML?, young
+% \resumeItemListEnd
+% \resumeProjectHeading
+% {{Software Lead for team \textbf{\emph{RegoSafe}} at TSGC’s Design Challenge}}{}
+% \resumeItemListStart
+% \resumeItem{Trained Detectron2 on
+%   lunar machinery state using
+%   \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set}
+% \resumeItemListEnd
+% \resumeProjectHeading{
+%   Backend Lead for project \textbf{\emph{Farm Fresh News}} at HackTX
+% }{}
+% \resumeItemListStart
+% \resumeItem{Developed application that aggregates farming news
+%   with \textbf{Google Natural Language API} sentiment analysis}
+% \resumeItemListEnd
+% \resumeProjectHeading{
+%   Software Developer for iOS App \textbf{\emph{Habitotchi}}
+% }{}
+% \resumeItemListStart
+% \resumeItem{Developed application that gamifies habit tracking with \textbf{SwiftUI} libraries like \textbf{Core Audio} and \textbf{SpriteKit}}
+% \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
 
 %% Add projects here
 %-----------LEADERSHIP---------
