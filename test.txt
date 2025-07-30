@@ -1,0 +1,6 @@
+I hope this email finds you well. I am reaching out regarding the grading of my submission for Project 3: Simulate a Market. After discussing the matter with Greyson Baker, I was advised to contact you directly for clarification on a specific aspect of the rubric. I noticed that I lost points for not using private variables in my implementation. While I understand the importance of encapsulation and private attributes in object-oriented programming, the assignment description did not explicitly state that private variables were required. Given this, I believed my approach, which adhered to the functional requirements, would be acceptable. This misunderstanding has significantly impacted my grade, and I would like to kindly request a re-evaluation of my project. I understand if you are unable to do so, but I figured I would just ask. Thank you for your time and understanding.
+
+---
+Hi Yasmeen,
+
+I can understand why it might feel weird to have lost points for not using private variables when it wasn't explicitly stated in the assignment description. I'll try chatting with the other TAs to see if we can have some other aspect we want to grade instead of private variables but I can't promise anything. Btw, the expectation is that you should be using private variables by default for classes for this course since we've been covering how they make it more secure.
