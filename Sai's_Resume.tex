@@ -21,6 +21,7 @@
 \input{glyphtounicode}
 \usepackage{fontawesome}
 \usepackage{setspace}
+\usepackage{xcolor}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -133,7 +134,7 @@
 \resumeSubLineheading
 {University of Texas at Austin}{Austin, TX}
 {Master of Science and Bachelor of Science in \textbf{Computer Science}, Minor in \textbf{Business} - 3.9 GPA}
-{}{May 2025} {}
+{}{Graduated May 2025} {}
 \\
 \resumeItemListStart
 \resumeItem{\small \textbf{Relevant Coursework:} Machine Learning, Data Structures, Algorithms,
@@ -158,15 +159,15 @@
 \end{itemize}
 
 %-----------EXPERIENCE-----------
-\section{Experienxce}
+\section{Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Software Engineer}{Jun 2025 -- Present}
 {Visa Inc.}{}
 \resumeItemListStart
-\resumeItem{Fixed data constency issues between PTDB and report generation tasks in \textbf{Scala} and \textbf{Java} by developing a solution to ensure data integrity and accuracy, resulting in a 30\% reduction in data discrepancies} %\ did a filter on orgIds that had _acct merchant at the end
+\resumeItem{Fixed data consistency issues between distributed databases and report generation tasks in \textbf{Scala} and \textbf{Java} by developing a solution to ensure data integrity and accuracy, resulting in a 30\% reduction in data discrepancies} %\ did a filter on orgIds that had _acct merchant at the end
 %\ manually have to replace instead
-\resumeItem{Transformed fixed 1-second lag alerts into merchant-configurable alerts, allowing for dynamic adjustment of alert thresholds and reducing false positives by 70\%} %\ usually notified in 2 second breaches, which happened roughly 70% of the day, this would happen for the IDC, which is a relatively new Data Center set for India
+\resumeItem{Transformed fixed 1-second lag alerts into configurable data center-level alerts, allowing dynamic adjustment of transaction delay thresholds between data centers and reducing false positives by 70\%} %\ usually notified in 2 second breaches, which happened roughly 70% of the day, this would happen for the IDC, which is a relatively new Data Center set for India
 \resumeItemListEnd
 
 \resumeSubheading
@@ -174,7 +175,7 @@
 {Visa Inc.}{}
 \resumeItemListStart
 \resumeItem{(S24) Designed a real-time analytics system on Hadoop Resource Utilization, built to optimize performance for a distributed queue with \textbf{$\geq$ 4k Virtual Cores} using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{PowerBI}, fulfilling a key part of team's cloud migration initiative}
-\resumeItem{(S23) Built a \textbf{Spark} pipeline in \textbf{Scala} on Visa's \textbf{Hadoop File System} to extract \textbf{YARN} results for data analytics jobs across orgs, with a designed compression and repartioned schemes for a \textbf{10x} file-size reduction}
+\resumeItem{(S23) Built a \textbf{Spark} pipeline in \textbf{Scala} on Visa's \textbf{Hadoop File System} to extract \textbf{YARN} results for data analytics jobs across orgs, with a designed compression and repartitioned schemes for a \textbf{10x} file-size reduction}
 % \resumeItem{Built a \textbf{Spark} pipeline in \textbf{Scala} on \textbf{HDFS} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
 
 % Add number to this one? How many spark jobs do we do hourly?
@@ -231,10 +232,10 @@
 \section{Projects}
 \begin{itemize}[]
   \small
-        {\item{\textbf{MDP Modelling:} 
-        {Designed a Programming Language with probablity embedded in the syntax to support modelling Markov Decision Processes (MDPs). Applied the language to model a Blackjack game, implementing a value iteration algorithm to compute optimal policies and value functions.
+        {\item{\textbf{MDP Modelling (\href{https://github.com/samz331/blackjack}{\textcolor{MidnightBlue}{GitHub}}):}
+        {Designed a Programming Language with probability embedded in the syntax to support modelling \textbf{Markov Decision Processes (MDP)}. Applied the language to model a Blackjack game, implementing a value iteration algorithm to compute optimal policies and value functions.
         }}}  \vspace{-4pt}
-    
+
         % {\item{\textbf{Cyber 9/12 Strategy Challenge - Best Decision Document:}
         % {Competed in D.C.'s 2025 Cyber 9/12 Strategy Challenge, winning the Best Decision Document award for comprehensive analysis and strategy recommendations on a simulated cyber crisis scenario.
         % }}}  \vspace{-4pt}
@@ -243,7 +244,7 @@
         }}} \vspace{-7pt}
 
         {\item{\textbf{TSGC's Design Challenge Team Software Lead (RegoSafe)}{: Trained computer vision model to classify lunar machinery status using
-          \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set
+          \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP score on test set
         }}}  \vspace{-7pt}
 
 
