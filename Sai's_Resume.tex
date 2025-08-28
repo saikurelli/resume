@@ -140,7 +140,10 @@
 \resumeItem{\small \textbf{Relevant Coursework:} Machine Learning, Data Structures, Algorithms,
 	Computer Architecture, Operating Systems, Graphics, Symbolic Programming, Programming for Correctness \& Performance,
 	iOS Development, Ethical Hacking} %FEEDBACK: PUT MORE IMPORTANT COURSES FIRST THEN THE BASICS IF U HAVE SPACE (YOU DON'T)
-\resumeItem{\small \textbf{Graduate Courses:} Grounded NLP, Theory \& Practice Of Secure Systems, Communication Complexity, Program Synthesis, Programming Languages, Cybersecurity Technology, Cybersecurity Technology Law and Policy, Securing Real World Systems, Ethics of AI, Human-Computer Interactions}
+\resumeItem{\small \textbf{Graduate Courses:} Grounded NLP, Theory \& Practice Of Secure Systems, Communication Complexity, Program Synthesis, Programming Languages, Cybersecurity Technology, Cybersecurity Technology Law and Policy}
+% , Securing Real World Systems, Ethics of AI, Human-Computer Interactions
+
+
 \resumeItemListEnd
 %   \resumeItemListStart
 %     % \resumeItem{\small \textbf{Relevant Coursework:} AP Computer Science A, AP Macroeconomics, AP Physics C: Mechanics, AP Physics C: Electricity and Magnetism, AP Statistics, Computer Science III, Multivariable Calculus, Organic Chemistry}
@@ -153,7 +156,7 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
 	      \textbf{Languages}{: Java, Scala, Python, SQL, C/C++, SwiftUI, React-Native with TypeScript} \\
-	      \textbf{Developer Tools}{: Docker, AWS, Kafka, Kubernetes, K9s, UNIX, Git, Hadoop, and Spark}
+	      \textbf{Developer Tools}{: Docker, AWS, Kafka, Kubernetes, K9s, UNIX, GitHub, Hadoop, and Spark}
 
 	      % \textbf{Big Data Tools}{: Spark, Hadoop, Hive, UNIX, Git, Docker, AWS, Kafka, PowerBI Dashboards} \\
 	      }}
@@ -166,6 +169,7 @@
 {Software Engineer}{Jun 2025 -- Present}
 {Visa Inc.}{}
 \resumeItemListStart
+\resumeItem{Engineered \textbf{MCP server} to enable natural language queries, converting user input to SQL via \textbf{Claude} and querying results from \textbf{Trino Fact Tables} for secure, accurate data access.}
 \resumeItem{Fixed data consistency issues between distributed databases for report generation tasks in \textbf{Scala} and \textbf{Java}, resulting in a \textbf{30\%} reduction in data discrepancies for \textbf{200+} affected merchants.}
 \resumeItem{Transformed fixed 1-second lag alerts into configurable data center-level thresholds between transactions, reducing false positives by \textbf{70\%} for more accurate and meaningful monitoring.}
 \resumeItemListEnd
@@ -224,18 +228,16 @@
 \section{Projects}
 \begin{itemize}[]
 	\small
-	      {\item{\textbf{LLaVA-Mend (\href{https://github.com/saikurelli/LLaVA-Mend}{\textcolor{MidnightBlue}{GitHub Link}})}{: Lead contributor in fine-tuning \textbf{LLaVA-Med} on challenging \textbf{Mediconfusion} radiology dataset, improving accuracy from \textbf{23.58\%} to \textbf{48.55\%}.}
-        \begin{itemize}
-          \item {Utilized \textbf{Weights \& Biases (W\&B)} for experiment tracking, metrics visualization, and hyperparameter optimization and \textbf{PEFT}, \textbf{LoRA}, and \textbf{DeepSpeed} for efficient distributed training on NVIDIA A100 GPUs. Benchmarked against prior models including proprietary solutions.}
-        \end{itemize}
-		    %   % goal of training the model to recognize the difference between similar looking images but important spatial differences
-		    %   % - natural variance, image artifacts, sickness
-		    %   % Training details: learning rate 1e-5, batch size 2, warmup ratio 0.03, two NVIDIA A100 GPUs (40GB RAM each)
-	      }}  \vspace{-4pt}
+	      {\item{\textbf{LLaVA-Mend (\href{https://github.com/saikurelli/LLaVA-Mend}{\textcolor{MidnightBlue}{GitHub Link}}):}
+	      {Lead contributor in fine-tuning \textbf{LLaVA-Med}, a medical MLLM, on challenging \textbf{Mediconfusion} radiology dataset, improving accuracy from \textbf{23.58\%} to \textbf{48.55\%}. Utilized \textbf{PEFT}, \textbf{LoRA}, and \textbf{DeepSpeed} for efficient distributed training on NVIDIA A100 GPUs. Benchmarked against prior models including proprietary solutions.
+		      % goal of training the model to recognize the difference between similar looking images but important spatial differences
+		      % - natural variance, image artifacts, sickness
+		      % Training details: learning rate 1e-5, batch size 2, warmup ratio 0.03, two NVIDIA A100 GPUs (40GB RAM each)
+	      }}}  \vspace{-4pt}
 
-	      % {\item{\textbf{MDP Modelling (\href{https://github.com/samz331/blackjack}{\textcolor{MidnightBlue}{GitHub Link}}):}
-	      % {Designed a Programming Language with probability embedded in the syntax to support modelling \textbf{Markov Decision Processes (MDP)}. Applied the language to model a Blackjack game, implementing a value iteration algorithm to compute optimal policies and value functions.
-	      % }}}  \vspace{-4pt}
+	      {\item{\textbf{MDP Modelling (\href{https://github.com/samz331/blackjack}{\textcolor{MidnightBlue}{GitHub Link}}):}
+	      {Designed a Programming Language with probability embedded in the syntax to support modelling \textbf{Markov Decision Processes (MDP)}. Applied the language to model a Blackjack game, implementing a value iteration algorithm to compute optimal policies and value functions.
+	      }}}  \vspace{-4pt}
 
 	      % {\item{\textbf{Cyber 9/12 Strategy Challenge - Best Decision Document:}
 	      % {Competed in D.C.'s 2025 Cyber 9/12 Strategy Challenge, winning the Best Decision Document award for comprehensive analysis and strategy recommendations on a simulated cyber crisis scenario.
@@ -244,9 +246,9 @@
 	      \textbf{HackMerced-VII Winner (Lablr)}{: Designed a \textbf{Vue.js} Chrome extension with \textbf{OpenCV} to detect spatial pixel irregularities and assign tags on image distortions, integrated with Instagram data stored on \textbf{AWS S3}
 	      }}} \vspace{-7pt}
 
-	      {\item{\textbf{TSGC's Design Challenge Team Software Lead (RegoSafe)}{: Trained computer vision model to classify lunar machinery status using
-		      \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP score on test set
-	      }}}
+	      % {\item{\textbf{TSGC's Design Challenge Team Software Lead (RegoSafe)}{: Trained computer vision model to classify lunar machinery status using
+		    %   \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP score on test set
+	      % }}}
 
 
 
@@ -327,5 +329,10 @@
 % Evidence of Excellence for Tesla
 % \section{Evidence of Excellence for Tesla}
 % At Visa, I contribute to the design and support of distributed backend systems that power real-time report analytics and improve data consistency for thousands of merchants. I use Java, Scala, and Python, and leverage technologies like Hadoop, Spark, and Kafka to help solve business needs. In previous Agile sprints, I delivered solutions that reduced false positives in alerting systems and enhanced customer experiences. With hands-on experience in REST APIs, microservices, and message queue architectures, I bring a passion for building scalable, well-tested products using tools such as Docker and Kubernetes, and I'm excited to learn more about Tesla's approach to software development and engineering. Tesla is at the forefront of innovation for electric vehicles and sustainable energy solutions, and I am eager to contribute my skills to a company that provides value to customers worldwide.
+
+
+% Third Person: Sai is a good fit for Tesla because of a strong background in building scalable backend systems with Java, Scala, and Python and leveraging technologies like Hadoop, Spark, and Kafka to help solve business needs. At Visa, Sai designed distributed analytics platforms, optimized workflows, and improved data consistency for projects affecting thousands of users. Sai has also worked on projects directly in AI/ML, specifically on the Grounded Natural Language Processing side, and developing machine learning solutions with Python and PyTorch. He'll thrive working in collaborative teams that deliver reliable, customer-facing products. Motivated by innovation and sustainability, Sai is excited about the opportunity to contribute technical skills and creativity to Tesla’s mission and work on impactful, consumer-facing projects that shape the future of innovation for electric vehicles and sustainable energy solutions.
+
+% Sai is a good fit for Tesla with experience in scalable backend systems at Visa using Java, Scala, and Python and technologies like Hadoop, Spark, and Kafka to help solve business needs. He has experience with machine learning projects using Python and PyTorch. Sai thrives in collaborative teams, enjoys building customer-facing products, and is excited to contribute his technical skills to Tesla’s mission of advancing electric vehicles and sustainable energy solutions.
 %-------------------------------------------
 \end{document}
