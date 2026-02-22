@@ -56,8 +56,8 @@
 \setlength{\footskip}{4.08003pt}
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -73,17 +73,17 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} & \footnotesize{#2} \\
+      \textit{#3} & \footnotesize{\textit{#4}} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubLineheading}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \footnotesize{#2} \\
       % \textit{\small#4} & \textit{\small #6} \\
-      \textit{\small#3} & \textit{\small #5} \\
+      \textit{#3} & \footnotesize{\textit{#5}} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -108,7 +108,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -124,7 +124,7 @@
 
 \begin{center}
 	\textbf{\huge \scshape Sairaja Kurelli} \\ \vspace{3pt}
-	\small \faGithub{} saikurelli $\;\;$ \faEnvelope{} saikurelli@utexas.edu $\;\;$ \faPhone{} 713-624-2159 $\;\;$\faLinkedin{} sai-kurelli
+	\footnotesize \faGithub{} saikurelli $\;\;$ \faEnvelope{} saikurelli@utexas.edu $\;\;$ \faPhone{} 713-624-2159 $\;\;$\faLinkedin{} sai-kurelli
 \end{center}
 
 
@@ -135,16 +135,6 @@
 {University of Texas at Austin}{Austin, TX}
 {Master of Science and Bachelor of Science in \textbf{Computer Science}, Minor in \textbf{Business} - 3.9 GPA}
 {}{Graduated May 2025} {}
-\\
-\resumeItemListStart
-\resumeItem{\small \textbf{Relevant Coursework:} Machine Learning, Data Structures, Algorithms,
-	Computer Architecture, Operating Systems, Graphics, Symbolic Programming, Programming for Correctness \& Performance,
-	iOS Development, Ethical Hacking}
-\resumeItem{\small \textbf{Graduate Courses:} Grounded NLP, Theory \& Practice Of Secure Systems, Communication Complexity, Program Synthesis, Programming Languages, Cybersecurity Technology, Cybersecurity Technology Law and Policy}
-% , Securing Real World Systems, Ethics of AI, Human-Computer Interactions
-
-
-\resumeItemListEnd
 %   \resumeItemListStart
 %     % \resumeItem{\small \textbf{Relevant Coursework:} AP Computer Science A, AP Macroeconomics, AP Physics C: Mechanics, AP Physics C: Electricity and Magnetism, AP Statistics, Computer Science III, Multivariable Calculus, Organic Chemistry}
 %     % \resumeItem{\small \textbf{Extracurricular Activities:} }
@@ -181,8 +171,7 @@
 \resumeItem{(S23) Built a \textbf{Spark} pipeline in \textbf{Scala} on Visa's \textbf{Hadoop File System} to extract, transform, and load \textbf{YARN} results for data analytics jobs across orgs, with compression and repartitioning for a \textbf{10x} reduction in file size}
 
 \resumeItem{(S22) Optimized 16 core \textbf{SQL} scripts with \textbf{JDBC} connections to \textbf{Spark-Thrift} servers for faster data processing and extraction workflows across large-scale datasets}
-
-\resumeItem{Designed systems with \textbf{JUnit} Unit Testing and integrated into \textbf{Splunk} to monitor logs in an \textbf{Agile} environment}
+\resumeItem{Designed systems with \textbf{JUnit} unit tests and integrated \textbf{Splunk} log monitoring across Agile sprints}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
