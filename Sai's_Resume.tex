@@ -21,7 +21,7 @@
 \input{glyphtounicode}
 \usepackage{fontawesome}
 \usepackage{setspace}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -139,7 +139,7 @@
 \resumeItemListStart
 \resumeItem{\small \textbf{Relevant Coursework:} Machine Learning, Data Structures, Algorithms,
 	Computer Architecture, Operating Systems, Graphics, Symbolic Programming, Programming for Correctness \& Performance,
-	iOS Development, Ethical Hacking} %FEEDBACK: PUT MORE IMPORTANT COURSES FIRST THEN THE BASICS IF U HAVE SPACE (YOU DON'T)
+	iOS Development, Ethical Hacking}
 \resumeItem{\small \textbf{Graduate Courses:} Grounded NLP, Theory \& Practice Of Secure Systems, Communication Complexity, Program Synthesis, Programming Languages, Cybersecurity Technology, Cybersecurity Technology Law and Policy}
 % , Securing Real World Systems, Ethics of AI, Human-Computer Interactions
 
@@ -155,10 +155,8 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 	\small{\item{
-	      \textbf{Languages}{: Java, Scala, Python, SQL, C/C++, SwiftUI, React-Native with TypeScript} \\
-	      \textbf{Developer Tools}{: Docker, AWS, Kafka, Kubernetes, K9s, UNIX, GitHub, Hadoop, and Spark}
-
-	      % \textbf{Big Data Tools}{: Spark, Hadoop, Hive, UNIX, Git, Docker, AWS, Kafka, PowerBI Dashboards} \\
+	      \textbf{Languages}{: Python, SQL, Scala, Java, C/C++, SwiftUI, React-Native with TypeScript} \\
+	      \textbf{Data Engineering Tools}{: Apache Spark, Hadoop, Hive, Kafka, Docker, Kubernetes, AWS, UNIX, GitHub}
 	      }}
 \end{itemize}
 
@@ -169,8 +167,8 @@
 {Software Engineer}{Jun 2025 -- Present}
 {Visa Inc.}{}
 \resumeItemListStart
-\resumeItem{Engineered a \textbf{MCP server} to enable natural language queries, converting user input to SQL with \textbf{Claude} and querying results from \textbf{Trino Fact Tables} for an accessible and secure data access interface.}
-\resumeItem{Fixed data consistency issues between distributed databases for report generation tasks in \textbf{Scala} and \textbf{Java}, resulting in a \textbf{30\%} reduction in data discrepancies for \textbf{200+} affected merchants.}
+\resumeItem{Engineered a \textbf{MCP server} using \textbf{Python} to enable natural language queries, converting user input to \textbf{SQL} with \textbf{Claude} and querying results from \textbf{Trino Fact Tables} for an accessible and secure data access interface.}
+\resumeItem{Re-engineered \textbf{data pipelines} in \textbf{Scala} and \textbf{Java} to resolve unoptimized data flows across distributed databases, achieving a \textbf{40\%} decrease in report generation time for 2 million daily reports.}
 \resumeItem{Transformed fixed 1-second lag alerts into configurable data center-level thresholds between transactions, reducing false positives by \textbf{70\%} for more accurate and meaningful monitoring.}
 \resumeItemListEnd
 
@@ -178,122 +176,15 @@
 {Software Engineer Intern}{May 2022 -- Aug. 2022, May 2023 -- Aug. 2023, May 2024 -- Aug. 2024}
 {Visa Inc.}{}
 \resumeItemListStart
-\resumeItem{(S24) Designed a real-time analytics system for Hadoop Resource Utilization, built to optimize performance of a distributed queue with \textbf{$\geq$ 4k Virtual Cores} using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{PowerBI}, fulfilling a key part of team's cloud migration initiative}
-\resumeItem{(S23) Built a \textbf{Spark} pipeline in \textbf{Scala} on Visa's \textbf{Hadoop File System} to extract \textbf{YARN} results for data analytics jobs across orgs, with compression and repartitioning for a \textbf{10x} reduction in file size}
-% \resumeItem{Built a \textbf{Spark} pipeline in \textbf{Scala} on \textbf{HDFS} to extract and compress \textbf{YARN} results from \textbf{Spark} Jobs by more than \textbf{10x}}
+\resumeItem{(S24) Designed a real-time analytics system for Hadoop Resource Utilization using \textbf{Apache Spark}, \textbf{Hive}, and \textbf{SQL} to optimize performance of a distributed queue with \textbf{$\geq$ 4k Virtual Cores}, with insights visualized through \textbf{PowerBI} dashboards}
 
-% Add number to this one? How many spark jobs do we do hourly?
-% Built on idea of optimizing SQL scripts (inner join before), now learning to take advantage of Spark SQL instead of more generic solutions like Pattern Matching (Map Reduce with Column Conditions)
-% x\resumeItemListEnd
-% % 2022, Sophomore - Junior Year summer
-% \resumeItemListStart
-\resumeItem{(S22) Optim. 16 core \textbf{SQL} scripts w/ \textbf{JDBC} connections to \textbf{Spark-Thrift} servers for faster in-house data processing}
+\resumeItem{(S23) Built a \textbf{Spark} pipeline in \textbf{Scala} on Visa's \textbf{Hadoop File System} to extract, transform, and load \textbf{YARN} results for data analytics jobs across orgs, with compression and repartitioning for a \textbf{10x} reduction in file size}
+
+\resumeItem{(S22) Optimized 16 core \textbf{SQL} scripts with \textbf{JDBC} connections to \textbf{Spark-Thrift} servers for faster data processing and extraction workflows across large-scale datasets}
+
 \resumeItem{Designed systems with \textbf{JUnit} Unit Testing and integrated into \textbf{Splunk} to monitor logs in an \textbf{Agile} environment}
 \resumeItemListEnd
-% \resumeSubheading
-% {Software Engineer Intern}{Jun. 2021 -- Aug. 2021}
-% {Tata Consultancy Services}{}
-% \resumeItemListStart
-% \resumeItem{Executed data conversion for customers' AP, AR, and GL Transactions using FBDI CSV files}
-% % \resumeItem{Role provisioned for on-boarding users and Inactivated Oracle User Accounts for off-boarding}
-% \resumeItem{Used Oracle \textbf{REST APIs} to update AP and AR invoices and Developed OTBI and BIP Reports using \textbf{SQL} queries}
-% \resumeItemListEnd
-% \resumeSubheading
-% {Student Researcher}{Jun. 2019 -- Aug. 2019}
-% {Rice University}{}
-% \resumeItemListStart
-% \resumeItem{Collaborated with Prof. Shrivastava to research \& fine-tune efficient bucket and permutation sizes for Minhashing}
-% % , improv. performance for large-scale similarity search tasks, explored hash function design trade-offs
-% \resumeItem{Optimized Murmurhash implementation in \textbf{Python} for a \textbf{3-4\%} improvement on sentiment analysis tasks}
-% \resumeItemListEnd
 
-%
-% Collaborated with Prof. Anshumali Shrivastava to research and fine-tune efficient bucket and permutation sizes for Minhashing algorithms, enhancing accuracy and performance for large-scale similarity search tasks.
-% Optimized the implementation of Murmurhash in Python, achieving a measurable 3–4% performance improvement in runtime efficiency.
-% Analyzed trade-offs in hash function design, contributing to a deeper understanding of how Minhashing can be applied in high-dimensional data scenarios.
-% Explored real-world applications of Minhashing in domains such as text similarity and large-scale deduplication.
-
-% \resumeSubheading
-%   {Software Engineer Intern}{May. 2019 -- Jul. 2019}
-%   {PetroEd}{}
-%   \resumeItemListStart
-%     \resumeItem{Implemented Naive-Bayes Classifier in \textbf{Java} as Similarity Checker between Lesson Objectives and Modules}
-%     \resumeItem{Developed e-learning software based on \textbf{SkillGRID LMS} and \textbf{SkillGRID CMS} format to license to oil/gas companies}
-% \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-
-
-\section{Projects}
-\begin{itemize}[]
-	\small
-	      {\item{\textbf{LLaVA-Mend (\href{https://github.com/saikurelli/LLaVA-Mend}{\textcolor{MidnightBlue}{GitHub Link}}):}
-	      {Lead contributor in fine-tuning \textbf{LLaVA-Med}, a medical MLLM, on challenging \textbf{Mediconfusion} radiology dataset, improving accuracy from \textbf{23.58\%} to \textbf{48.55\%}. Utilized \textbf{PEFT}, \textbf{LoRA}, and \textbf{DeepSpeed} for efficient distributed training on NVIDIA A100 GPUs.
-		      % Benchmarked against prior models including proprietary solutions.
-          % goal of training the model to recognize the difference between similar looking images but important spatial differences
-		      % - natural variance, image artifacts, sickness
-		      % Training details: learning rate 1e-5, batch size 2, warmup ratio 0.03, two NVIDIA A100 GPUs (40GB RAM each)
-	      }}}  \vspace{-4pt}
-
-	      {\item{\textbf{MDP Modelling (\href{https://github.com/samz331/blackjack}{\textcolor{MidnightBlue}{GitHub Link}}):}
-	      {Designed a Programming Language with probability embedded in the syntax to support modelling \textbf{Markov Decision Processes (MDP)}. Applied the language to model a Blackjack game, implementing a value iteration algorithm to compute optimal policies and value functions.
-	      }}}  \vspace{-4pt}
-
-	      % {\item{\textbf{Cyber 9/12 Strategy Challenge - Best Decision Document:}
-	      % {Competed in D.C.'s 2025 Cyber 9/12 Strategy Challenge, winning the Best Decision Document award for comprehensive analysis and strategy recommendations on a simulated cyber crisis scenario. }}}
-	      %  \vspace{-4pt}
-	      {\item{
-	      \textbf{HackMerced-VII Winner (Lablr)}{: Designed a \textbf{Vue.js} Chrome extension with \textbf{OpenCV} to detect spatial pixel irregularities and assign tags on image distortions, integrated with Instagram data stored on \textbf{AWS S3}
-	      }}}
-        % \vspace{-4pt}
-
-	      % {\item{\textbf{TSGC's Design Challenge Team Software Lead (RegoSafe)}{: Trained computer vision model to classify lunar machinery status using
-		    %   \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP score on test set
-	      % }}}
-
-
-
-	      % {\item{\textbf{HackTX's Design Challenge Team Backend Lead (Farm Fresh News)}{: Developed a full-stack application aggregating farming news to determine crop outlook with \textbf{Google Natural Language API} sentiment analysis engine
-	      % }}}  \vspace{-7pt}
-	      % {\item{\textbf{Software Developer for iOS App (Habitotchi)}{: Developed an iOS application that gamifies habit tracking with \textbf{SwiftUI} libraries like \textbf{Core Audio} and \textbf{SpriteKit}}}}
-	      % }}}  \vspace{-7pt}
-
-
-	      %
-
-\end{itemize}
-% \resumeSubHeadingListStart
-% \resumeProjectHeading
-% {\textbf{First Place at HackMerced-VII} with team project \textbf{\emph{Lablr}} for Instagram}{}
-% \resumeItemListStart
-% \resumeItem{Designed a \textbf{Chrome} Extension with \textbf{Vue.JS} integrated with \textbf{AWS S3} storage to help users assign tags on Image Distortions and develop a healthier body mindset.}
-% % ML?, young
-% \resumeItemListEnd
-% \resumeProjectHeading
-% {{Software Lead for team \textbf{\emph{RegoSafe}} at TSGC’s Design Challenge}}{}
-% \resumeItemListStart
-% \resumeItem{Trained Detectron2 on
-%   lunar machinery state using
-%   \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP Score on test set}
-% \resumeItemListEnd
-% \resumeProjectHeading{
-%   Backend Lead for project \textbf{\emph{Farm Fresh News}} at HackTX
-% }{}
-% \resumeItemListStart
-% \resumeItem{Developed application that aggregates farming news
-%   with \textbf{Google Natural Language API} sentiment analysis}
-% \resumeItemListEnd
-% \resumeProjectHeading{
-%   Software Developer for iOS App \textbf{\emph{Habitotchi}}
-% }{}
-% \resumeItemListStart
-% \resumeItem{Developed application that gamifies habit tracking with \textbf{SwiftUI} libraries like \textbf{Core Audio} and \textbf{SpriteKit}}
-% \resumeItemListEnd
-
-% \resumeSubHeadingListEnd
-
-%% Add projects here
 %-----------LEADERSHIP---------
 \section{Leadership}
 \resumeSubHeadingListStart
@@ -315,35 +206,59 @@
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
+\section{Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small
+	\item \textbf{LLaVA-Mend (\href{https://github.com/saikurelli/LLaVA-Mend}{\textcolor{MidnightBlue}{GitHub Link}}):}
+	      {Lead contributor in fine-tuning \textbf{LLaVA-Med} using \textbf{Python} and \textbf{PyTorch}, a medical MLLM, on challenging \textbf{Mediconfusion} radiology dataset, improving accuracy from \textbf{23.58\%} to \textbf{48.55\%}. Utilized \textbf{PEFT}, \textbf{LoRA}, and \textbf{DeepSpeed} for efficient distributed training on NVIDIA A100 GPUs.} \vspace{-4pt}
 
-% Move activities to another section?
-% \resumeSubheading
-%   {}{}
-%   {Economics Club}{Dulles High School}
-%   \resumeItemListStart
-%     \resumeItem{Organized 3-4 National Economic Challenge, Knowledge@Wharton, and Personal Finance Challenge groups}
-%     \resumeItem{Taught Macroeconomics concepts such as Inflation and GDP}
-%   \resumeItemListEnd
+	\item \textbf{MDP Modelling (\href{https://github.com/samz331/blackjack}{\textcolor{MidnightBlue}{GitHub Link}}):}
+	      {Designed a Programming Language with \textbf{Python} interpreter to model \textbf{Markov Decision Processes (MDP)} with probability embedded in the syntax. Applied the language to model a Blackjack game, implementing a value iteration algorithm to compute optimal policies and value functions.} \vspace{-4pt}
+
+	\item \textbf{HackMerced-VII Winner (Lablr):}
+	      {Designed a \textbf{Vue.js} Chrome extension with \textbf{OpenCV} and \textbf{Python} to detect spatial pixel irregularities and assign tags on image distortions, with data extraction and integration pipelines storing results on \textbf{AWS S3}.}
+\end{itemize}
 
 %-----------Awards/PROGRAMMING SKILLS-----------
-
-
 % Evidence of Excellence for Tesla
 % \section{Evidence of Excellence for Tesla}
-% At Visa, I contribute to the design and support of distributed backend systems that power real-time report analytics and improve data consistency for thousands of merchants. I use Java, Scala, and Python, and leverage technologies like Hadoop, Spark, and Kafka to help solve business needs. In previous Agile sprints, I delivered solutions that reduced false positives in alerting systems and enhanced customer experiences. With hands-on experience in REST APIs, microservices, and message queue architectures, I bring a passion for building scalable, well-tested products using tools such as Docker and Kubernetes, and I'm excited to learn more about Tesla's approach to software development and engineering. Tesla is at the forefront of innovation for electric vehicles and sustainable energy solutions, and I am eager to contribute my skills to a company that provides value to customers worldwide.
+% At Visa, I contribute to the design and support of distributed backend systems that power real-time report analytics and improve data consistency for thousands of merchants. I use Java, Scala, and Python, and leverage technologies like Hadoop, Spark, and Kafka to help solve business needs. In previous Agile sprints, I delivered solutions that reduced false positives in alerting systems and enhanced customer experiences. With hands-on experience in REST APIs, microservices, and message queue architectures, I bring a passion for building scalable, well-tested products using tools such as Docker and Kubernetes, and I'm excited to learn more about Tesla's approach to software development and engineering.
 
-
-% Third Person: Sai is a good fit for Tesla because of a strong background in building scalable backend systems with Java, Scala, and Python and leveraging technologies like Hadoop, Spark, and Kafka to help solve business needs. At Visa, Sai designed distributed analytics platforms, optimized workflows, and improved data consistency for projects affecting thousands of users. Sai has also worked on projects directly in AI/ML, specifically on the Grounded Natural Language Processing side, and developing machine learning solutions with Python and PyTorch. He'll thrive working in collaborative teams that deliver reliable, customer-facing products. Motivated by innovation and sustainability, Sai is excited about the opportunity to contribute technical skills and creativity to Tesla’s mission and work on impactful, consumer-facing projects that shape the future of innovation for electric vehicles and sustainable energy solutions.
-
-% Sai is a good fit for Tesla with experience in scalable backend systems at Visa using Java, Scala, and Python and technologies like Hadoop, Spark, and Kafka to help solve business needs. He has experience with machine learning projects using Python and PyTorch. Sai thrives in collaborative teams, enjoys building customer-facing products, and is excited to contribute his technical skills to Tesla’s mission of advancing electric vehicles and sustainable energy solutions.
-%-------------------------------------------
-\end{document}
-
-
-
+% Tesla Statement
+% At Visa, I currently contribute to the design and support of distributed backend systems that power real-time report analytics and improve data consistency for thousands of merchants. I use Java, Scala, and Python, and leverage technologies like Hadoop, Spark, and Kafka to help solve business needs. In previous Agile sprints, I delivered solutions that reduced false positives in alerting systems and enhanced customer experiences. With hands-on experience in REST APIs, microservices, and message queue architectures, I bring a passion for building scalable, well-tested products using tools such as Docker and Kubernetes, and I'm excited to learn more about Tesla's approach to software development and engineering.
 
 % Microsoft Statement
-% Sai is a good fit for Microsoft because of his strong background in building scalable backend systems with Java, Scala, and Python and leveraging technologies like Hadoop, Spark, and Kafka to help solve business needs at Visa. Sai designed distributed analytics platforms, optimized workflows, and improved data consistency for projects affecting thousands of users. Personally, I’ve seen Sai take a great interest in Computer Science throughout his college courses and beyond. He'll thrive working in collaborative teams that deliver reliable, customer-facing products. Sai is excited about the opportunity to contribute technical skills and creativity to Microsoft’s mission and work on impactful, consumer-facing projects that shape the future of technology. Sai’s leadership abilities shone through his role as President of the Texas ACM club, where he had hosted some of the largest technical events on campus, playing a major leading role while also fostering involvement from students across the school. Sai was also Head TA for UT Austin’s Python programming course and served as a TA for 7 semesters, mentoring others while solidifying his expertise in Python development. From my personal experience, I’ve seen Sai’s enthusiasm for solving complex problems and he always demonstrates a collaborative and proactive approach in light of challenges.
+% Sai is a good fit for Microsoft because of his strong background in building scalable backend systems with Java, Scala, and Python and leveraging technologies like Hadoop, Spark, and Kafka to help solve business needs at Visa. Sai designed distributed analytics platforms, optimized workflows, and improved data consistency for projects affecting thousands of users. Personally, I’ve seen Sai take a great interest in Computer Science throughout his college courses and beyond. He'll thrive working in collaborative teams that deliver reliable, customer-facing products. Sai is excited about the opportunity to contribute technical skills and creativity to Microsoft’s mission and work on impactful, consumer-facing projects that shape the future of technology.
 
 % Stripe Statement
-% Sai is deeply passionate about Financial Technology, demonstrated by multiple internships and a full-time role at Visa, where he built and optimized distributed payment analytics systems, engineered MCP server that processes natural language queries to extract insights from financial data, and improved data consistency for merchant reporting. With hands-on experience in Big Data tools like Spark and Scala, and visualization platforms such as Power BI, Sai uses these skills and his understanding of the FinTech landscape to design impactful solutions. His technical foundation is further strengthened by advanced coursework in UT Austin’s Accelerated 5-Year Master’s program in Computer Science. Sai thrives in collaborative, fast-paced environments and enjoys solving complex problems that drive real impact for users and learning from his peers. This blend of industry experience, technical expertise, and leadership makes Sai well-prepared to contribute to Stripe’s mission of advancing innovation in the global payment ecosystem.
+% Sai is deeply passionate about Financial Technology, demonstrated by multiple internships and a full-time role at Visa, where he built and optimized distributed payment analytics systems, engineered MCP server that processes natural language queries to extract insights from financial data, and improved data consistency for merchant reporting. With hands-on experience in Big Data tools like Spark and Scala, and visualization platforms such as Power BI, Sai uses these skills and his understanding of the FinTech landscape to design impactful solutions. His technical foundation is further strengthened by advanced coursework in UT Austin’s Accelerated 5-Year Master’s program in Computer Science.
+
+% ARCHIVED CONTENT FOR REFERENCE
+% Archived Experience:
+% \resumeSubheading{Software Engineer Intern}{Jun. 2021 -- Aug. 2021}{Tata Consultancy Services}{}
+% \resumeItemListStart
+% \resumeItem{Executed data conversion for customers' AP, AR, and GL Transactions using FBDI CSV files}
+% \resumeItem{Used Oracle REST APIs to update AP and AR invoices and Developed OTBI and BIP Reports using SQL queries}
+% \resumeItemListEnd
+
+% \resumeSubheading{Student Researcher}{Jun. 2019 -- Aug. 2019}{Rice University}{}
+% \resumeItemListStart
+% \resumeItem{Collaborated with Prof. Shrivastava to research & fine-tune efficient bucket and permutation sizes for Minhashing}
+% \resumeItem{Optimized Murmurhash implementation in Python for a 3-4\% improvement on sentiment analysis tasks}
+% \resumeItem{Analyzed trade-offs in hash function design, contributing to a deeper understanding of Minhashing applications}
+% \resumeItemListEnd
+
+% \resumeSubheading{Software Engineer Intern}{May. 2019 -- Jul. 2019}{PetroEd}{}
+% \resumeItemListStart
+% \resumeItem{Implemented Naive-Bayes Classifier in Java as Similarity Checker between Lesson Objectives and Modules}
+% \resumeItem{Developed e-learning software based on SkillGRID LMS and SkillGRID CMS format for oil/gas companies}
+% \resumeItemListEnd
+
+% Archived Projects:
+% \item{\textbf{TSGC's Design Challenge Team Software Lead (RegoSafe):} Trained computer vision model to classify lunar machinery status using \textbf{Detectron2} with \textbf{PyTorch}, scoring a 72 AP score on test set}
+% \item{\textbf{HackTX's Design Challenge Team Backend Lead (Farm Fresh News):} Developed a full-stack application aggregating farming news to determine crop outlook with \textbf{Google Natural Language API} sentiment analysis engine}
+% \item{\textbf{Software Developer for iOS App (Habitotchi):} Developed an iOS application that gamifies habit tracking with \textbf{SwiftUI} libraries like \textbf{Core Audio} and \textbf{SpriteKit}}
+
+% Role Statements:
+% ...existing code...
+```
