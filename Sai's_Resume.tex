@@ -168,7 +168,7 @@
 \resumeItemListStart
 \resumeItem{Built a \textbf{MCP server} in \textbf{Python} enabling natural language queries by leveraging \textbf{Claude} to translate user input into \textbf{SQL}, querying \textbf{Trino Fact Tables} for an accessible and secure data access interface.}
 \resumeItem{Redesigned \textbf{data pipelines} in \textbf{Scala} and \textbf{Java} to resolve unoptimized data flows across distributed databases, achieving a \textbf{40\%} decrease in report generation time for an average of 2 million daily reports.}
-\resumeItem{Transformed fixed 1-second lag alerts into configurable data center-level thresholds between transactions, reducing false positives by \textbf{70\%} for more accurate and meaningful monitoring.}
+\resumeItem{Replaced a uniform 1-second replication lag threshold — which caused both \textbf{false positive} and \textbf{false negative} halts to report generation — with configurable, per-data-center thresholds tuned to each transaction window.}
 \resumeItem{Accelerated \textbf{empty-report file write stage} from \textbf{2 hours} to \textbf{17 minutes} by migrating to \textbf{Java NIO} bulk batch writes, while preserving required header and footer rows.}
 
 \resumeItem{Enhanced pipeline delay checks with \textbf{Qlik} replication latency and per-report-type final table monitors.}
