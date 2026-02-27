@@ -66,7 +66,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-4pt}}
   }
 }
 
@@ -170,8 +170,12 @@
 \resumeItem{Redesigned \textbf{data pipelines} in \textbf{Scala} and \textbf{Java} to resolve unoptimized data flows across distributed databases, achieving a \textbf{40\%} decrease in report generation time for an average of 2 million daily reports.}
 \resumeItem{Transformed fixed 1-second lag alerts into configurable data center-level thresholds between transactions, reducing false positives by \textbf{70\%} for more accurate and meaningful monitoring.}
 \resumeItem{Accelerated \textbf{empty-report file write stage} from \textbf{2 hours} to \textbf{17 minutes} by migrating to \textbf{Java NIO} bulk batch writes, while preserving required header and footer rows.}
+
+\resumeItem{Replaced coarse pipeline delay checks, which caused \textbf{false positive} and \textbf{false negative} report-generation halts, with \textbf{Qlik} replication latency and per-report-type final table monitors.}
+% \resumeItem{Built a reporting engine observability dashboard tracking success metrics, trends, and pipeline phases.}
 \resumeItemListEnd
 
+\vspace{4pt}
 \resumeSubheading
 {Software Engineer Intern}{May 2022 -- Aug. 2022, May 2023 -- Aug. 2023, May 2024 -- Aug. 2024}
 {Visa Inc.}{}
